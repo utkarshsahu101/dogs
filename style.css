@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(rgba(51, 51, 51,0.4), rgba(51, 51, 51,0.5)), url('dogHuman.jpeg') no-repeat center/cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 32px 10px;
+}
+label {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 3.5rem;
+}
+.twoInput {
+    display: flex;
+    justify-content: space-between;
+}
+.twoInput input, 
+.twoInput select {
+    border: none;
+    margin-right: 50px;
+    background: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
+}
+input:focus,
+select:focus, button:focus {outline:none;
+}
+.twoInput select {
+    width: 100%;
+}
+#btn {
+    border: 1px solid black;
+    background: black;
+    border-radius: 10px;
+    margin: 16px auto;
+    font-size: 2rem;
+    padding: 8px 30px;
+    color: white;
+}
+.twoInput select option {
+    color: black;
+}
+::placeholder { 
+    color: white;
+    opacity: 1; 
+}
+.humanImage, .dogImage{
+    text-align: center;
+    margin-top: 20px;
+}
+#dogData {
+    display: none;
+}

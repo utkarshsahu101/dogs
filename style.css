@@ -59,7 +59,14 @@ select:focus, button:focus {outline:none;
 .humanImage, .dogImage{
     text-align: center;
     margin-top: 20px;
+    animation: human 4s ease-in-out infinite;
 }
 #dogData {
     display: none;
+}
+@keyframes human {
+    /* 0% { transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);} */
+    50% {transform: translate(0px, 20px);}
 }

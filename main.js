@@ -16,8 +16,8 @@ function convertFunction(event) {
     dAY = parseFloat(dogsAgeYear.value);
     dAY = hA < 21 ? hA/10.5 : (hA-21)/4 + 2;
     dAM = Math.round((dAY - Math.floor(dAY)) * 12);
-    dogsAgeYear.value = Math.floor(dAY);
-    dogsAgeMonth.value = dAM;
+    dogsAgeYear.value = Math.floor(dAY) + " years";
+    dogsAgeMonth.value = dAM + " months";
     // dogImage.style.display = "block";
     dogData.style.display = "block";
     humanData.style.display = "none";
